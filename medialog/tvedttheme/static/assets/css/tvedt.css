@@ -579,10 +579,16 @@ p.lead,
 #services {
 	background: black;
 	min-height: 200px;
+	height: auto;
+	width: 100%;
+	max-width: 10000px;
+	clear: both;
+	float:left;
 }
 
 div.service-container {
 	max-width: 1000px ;
+	width: 100%;
 	margin: auto;
 }
  
