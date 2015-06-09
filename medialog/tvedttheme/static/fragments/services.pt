@@ -1,18 +1,18 @@
 <section id="services" class="service-item"
-		 tal:define="folder_is nocall:context/services-1|nothing">
-    <div class="container"  tal:condition="folder_is">
+		 tal:define="folder_is nocall:context/services|nothing">
+    <div class="service-container"  tal:condition="folder_is">
     
-        <div class="container">
+ 
             <div class="center wow fadeInDown animated" 
            		style="visibility: visible; animation-name: fadeInDown;">
-                <h2 tal:content="context/services-1/Title" />
+                <h2 tal:content="context/services/Title" />
                 <p class="lead" 
-                	tal:content="context/services-1/Description"  />
+                	tal:content="context/services/Description"  />
             </div>
             
-            <div class="row">
+            <div class="service-items">
 				<div tal:repeat="item  
-				        python:context.restrictedTraverse('@@folderListing')(Subject='services')"
+                    	 python: context.services.restrictedTraverse('@@folderListing')()"
                     	class="col-md-4 col-sm-6 wow fadeInDown animated" 
                         data-wow-delay="600ms" data-wow-duration="1000ms" 
                         style="visibility: visible; animation-duration: 1000ms; 
@@ -23,15 +23,9 @@
 						style="visibility: visible; animation-name: fadeInDown;">
 						<div class="pull-left">
 							<img src="" alt=""  
-							    tal:condition="python: item.image"
-                      	    	class="img-responsive pull-left"
+							    class="img-responsive pull-left"
                       	    	tal:attributes="alt item/Title; 
-                      	    		src python:item_url + '/@@images/image'" />
-                      	    <img src="http://www.veryicon.com/icon/png/Application/Crystal%20Project%20Application/Service%20Manager.png" 
-                      	        alt=""  
-							    tal:condition="not: python: item.image"
-                      	    	class="img-responsive pull-left"
-                      	    	tal:attributes="alt item/Title;" />
+                      	    		src python:item_url + '/image_thumb'" />
 						</div>
 						 
 						<div class="media-body">
@@ -45,9 +39,7 @@
                     </div>
                 </div>
             </div>
-    	</div>
- 	</div>
+    </div>
 </section>
 
  
-    

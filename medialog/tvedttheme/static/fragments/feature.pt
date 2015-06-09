@@ -12,7 +12,7 @@
  
                 <div class="features" >
                     <div tal:repeat="item 
-                    	python:context.restrictedTraverse('@@folderListing')(Subject='features')"
+                    	 python: context.features.restrictedTraverse('@@folderListing')()"
                         class="col3 wow fadeInDown animated" 
                         data-wow-delay="600ms" data-wow-duration="1000ms" 
                         style="visibility: visible; animation-duration: 1000ms; 
@@ -26,8 +26,10 @@
                              <i class="fa fa-info" 
                             	tal:condition="not:exists:item/iconfield">
                              </i>
+                             <div class="feature-text">
                             <h2 tal:content="item/Title" />
                             <h3 tal:content="item/Description" />
+                            </div>
                         </div>            
 
                     </div>
