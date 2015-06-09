@@ -11,9 +11,9 @@
             </div>
             
             <div class="service-items">
-				<div tal:repeat="item  
+		<div tal:repeat="item  
                     	 python: context.services.restrictedTraverse('@@folderListing')()"
-                    	class="col3" 
+                    	class="col3 wow fadeInDown animated" 
                         data-wow-delay="600ms" data-wow-duration="1000ms" 
                         style="visibility: visible; animation-duration: 1000ms; 
                         animation-delay: 600ms; animation-name: fadeInDown;">
