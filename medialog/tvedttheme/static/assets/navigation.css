@@ -1,0 +1,193 @@
+
+#portal-globalnav  {
+	clear: both;
+	margin:  auto ;
+	display: none;
+	z-index: 95;
+	background: white;
+}
+
+#portal-globalnav li {
+	display: block;
+	margin: 5px;
+	position: relative;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	moz-border-radius: 5px;
+	background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#portal-globalnav   li.expanded:hover {
+	background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#portal-globalnav li.expanded a:hover {
+	color: #000;
+	font-weight: bold;
+}
+
+#portal-globalnav  li a {
+	background: transparent;
+	padding: 10px 3%;
+	color: #333;
+	width: auto;
+	line-height: 20px;
+	font-size: 120%;
+	display: block;
+}
+
+#portal-globalnav   li:hover {
+	background: linear-gradient(to bottom, #DDD 0%, #777 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#portal-globalnav   li a:hover {
+	color: #FFF;
+}
+
+.mobileButtons a#toggle_navigation {
+	background: white url(++theme++medialog.tvedttheme/assets/images/1400610971_menu-24.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.mobileButtons a#toggle_search {
+	background: white url(++theme++medialog.tvedttheme/assets/images/1400613794_11_Search.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.mobileButtons a#toggle_usermenu {
+	background: white url(++theme++medialog.tvedttheme/assets/IcoMoon/Icons/png/32px/lock.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.globalnav li a.slide,
+.globalnav li.noChildren a,
+#portal-globalnav.mobileNavigation li.noChildren a,
+#portal-globalnav.mobileNavigation li a.loadChildren {
+	margin-right: 0;
+}
+
+#portal-globalnav.mobileNavigation li a.loadChildren {
+	background: url(++resource++ftw.mobilenavigation/expandme-navi.png) no-repeat center center;
+	position: absolute;
+	width: 60px;
+	font-size: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	top: 0;
+	right: 0px;
+}
+
+#portal-globalnav.mobileNavigation li.expanded > a.loadChildren {
+	background: url(++resource++ftw.mobilenavigation/collapseme-navi.png) no-repeat center center;
+}
+
+#portal-globalnav.mobileNavigation li.loading > a.loadChildren {
+	background: url(++resource++ftw.mobilenavigation/spinner.gif) no-repeat center center;
+}
+
+#portal-globalnav.mobileNavigation li > ul {
+	display: none;
+}
+
+#portal-globalnav.mobileNavigation li.expanded > ul {
+	display: block;
+}
+
+
+.mobileButtons {
+	float: right;
+	margin: 0;
+	display: block;
+	z-index: 4;
+    list-style:none;
+    padding-left: 0;
+}
+
+.mobileButtons a {
+	width: 24px;
+	height: 24px;
+	padding: 16px;
+	display: block;
+	background: url(++resource++ftw.mobilenavigation/mobile_buttons.png) no-repeat center center #aaa;
+	float: right;
+}
+
+
+.mobileButtons li {
+    display: block;
+	float:right;
+}
+
+ #portal-globalnav,
+  #portal-personaltools dt.actionMenuHeader,
+  #portal-searchbox {
+	display: none;
+	padding: 0;
+}
+
+ul#portal-globalnav  {
+	left:0;
+    right:0;
+    margin:0 ;
+    padding:0;
+
+}
+
+body.mobileNaviLoaded #portal-personaltools {
+	width: 100%;
+	position: absolute;
+	margin-top: 52px;
+	background-color: transparent;
+}
+
+body.mobileNaviLoaded #portal-personaltools a {
+	font-size: 150%;
+}
+
+#portal-searchbox {
+	clear:  both;
+	width: 100%;
+	background: #EEEEEE;
+	margin: 0;
+ 
+}
+
+ div.searchSection {
+	display: none;
+}
+
+  form#livesearch0 {
+	margin: 20px;
+}
+
+   #searchGadget {
+	font-size: 18px;
+	line-height: 40px;
+	padding-left: 12px;
+	border-radius: 8px;
+	margin: 0;
+}
+
+   .searchButton {
+	font-size: 24px;
+	height: 44px;
+	margin-left: 12px;
+	padding: 3px;
+}
+
+    div.LSBox {
+	padding: 10px;	
+	margin: 0;
+}
+
+ 
+ #portal-globalnav,
+ .globalnav,
+ul#portal-globalnav.mobileNavigation  > li.expanded > ul,
+ul#portal-globalnav.mobileNavigation  .loadChildren {
+	display: none;
+}
+ 

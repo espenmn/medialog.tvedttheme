@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Prevent theme usage in zmi-->
+    <rules css:if-content="#visual-portal-wrapper">
+ 
+        <theme href="theme.html" />
+ 
+        
+        
+        <replace content="/html/head/title" theme="/html/head/title" />
+        <replace content="/html/head/base" theme="/html/head/base" />
+        <!-- replace content="/html/head/meta" theme="/html/head/meta" / -->
+        <!--before content='/html/head' theme='/html/head' /-->
+
+        <!-- Drop styles in the head - these are added back by including them from Plone -->
+        <drop theme="/html/head/style" />
+
+        <!-- Pull in Plone CSS -->
+        <!-- after theme-children="/html/head" content="/html/head/link | /html/head/style-" /-->
+
+
+        <!-- Pull in Plone JS -->
+        <after theme-children="/html/head" content="/html/head/script" />
+        <!-- Personal tools, remove if you dont edit on mobile -->
+        <replace css:content="#portal-personaltools" css:theme="#portal-personaltools" />
+           <replace css:content="ul.mobileButtons" css:theme="ul.mobileButtons" />     
+
+        <!-- replace css:content="#portal-logo" css:theme="#portal-logo" /-->
+        <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
+        <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
+        <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
+
+        
+        <replace css:content="#edit-bar" css:theme="#edit-bar" />
+       
+       
+        <!--content, skipped left and right columns-->
+        <replace css:content="#portal-columns" css:theme="#portal-columns" />
+        
+          <!-- sections on homepage only -->
+  		<rules css:if-content="body.template-document_view.section-front-page">
+  		    <replace css:theme="#main-slider" css:content="#main-slider" href="/@@theme-fragment/mainslider" />
+			<replace css:theme="#feature"     css:content="#feature"     href="/@@theme-fragment/feature" />   
+    		<replace css:theme="#services"    css:content="#services"    href="/@@theme-fragment/services" /> 
+
+ 		 </rules>
+
+ 		 <rules css:if-not-content="body.template-document_view.section-front-page">
+   			<drop css:theme="#feature" />    
+    		<drop css:theme="#services" />
+ 		 </rules>
+
+
+    </rules>
+</rules>

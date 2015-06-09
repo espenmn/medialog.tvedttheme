@@ -1,0 +1,5 @@
+<a id="portal-logo"
+   title="¯ystein Tvedt AS"
+   accesskey="1"
+   tal:attributes="href view/navigation_root_url">
+   <h1 class="sitetitle">¯ystein Tvedt AS</h1></a>

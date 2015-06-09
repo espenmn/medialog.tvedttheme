@@ -1,0 +1,47 @@
+<section id="main-slider" class="no-margin"
+		 tal:define="slider_is nocall:context/slider|nothing"
+		 tal:condition="slider_is" >
+	<div class="carousel slide" >
+ 
+		<div class="carousel-inner">
+
+		  <tal:repeat  tal:repeat="item  context/slider/@@folderListing" > 
+			<div tal:define="item_url item/getURL|item/absolute_url;
+				image_url python:item_url + '/@@images/image' ;
+				style python: 'background-image:url(' + image_url + ')'" 
+				class="item active"
+           		tal:attributes="style style">
+           		 <h2 tal:content="item/Title" />
+				<div class="container">
+					<div class="row slide-margin">
+						<div class="col-sm-6">
+							<div class="carousel-content">
+								<h1 class="animation animated-item-1" tal:content="item/Title" />
+								<h2 class="animation animated-item-2" tal:content="item/Description" />
+								<a class="btn-slide animation animated-item-3" 
+									href="#" tal:attributes="href item_url">Read More</a>
+							</div>
+						</div>
+
+						<!-- div class="col-sm-6 hidden-xs animation animated-item-4">
+							<div class="slider-img">
+								<img src="" alt="" tal:attributes="src image_url"/>
+							</div>
+						</div -->
+
+					</div>
+				</div>
+			</div><!--/.item-->
+		  </tal:repeat>
+			
+		</div><!--/.carousel-inner-->
+	</div><!--/.carousel-->
+	<a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+		<i class="fa fa-chevron-left"></i>
+	</a>
+	<a class="next hidden-xs" href="#main-slider" data-slide="next">
+		<i class="fa fa-chevron-right"></i>
+	</a>
+</section><!--/#main-slider-->
+
+ 
