@@ -1459,6 +1459,12 @@ div#ajax-spinner {
 	line-height: 2em;
  
 }
+
+.feature-wrap i {
+  font-size: 30px;
+  height: auto;
+  width: auto;
+}
 }
 
 /* @end */
