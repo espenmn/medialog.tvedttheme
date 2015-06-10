@@ -2,34 +2,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
 
-@media (min-width: 600px) and (max-width: 840px) {
- .col3{
-	  width: 80%;
-	  margin-left: 6%;
- 
-	
-   }
 
-  h1.site_title {
-	font-size: 1.4em;
-	line-height: 2em;
-	padding-top: 0.4em;
-}
-}
-
-@media (max-width: 600px) {
-	 .col3{
-	  width: 80%;
-	  margin-left: 15%;
-	  clear:  both;
-	
-   }
-   h1.site_title {
-	font-size: 1.4em;
-	line-height: 2em;
-	padding-top: 0.4em;
-}
-}
 
 ul#portal-globalnav {
 	z-index: 9;
@@ -541,6 +514,11 @@ div.service-items {
 
 .features div {
 	float:  left;
+}
+
+div.feature-text {
+	float: left;
+	width: 47%;
 }
 
 
@@ -1441,6 +1419,34 @@ div#ajax-spinner {
 	.ath-ios6:after {
 		left: 39%;
 	}
+
+
+@media  (max-width: 840px) {
+
+  div.feature-text {
+	width: 69%
+  }
+	
+  .col3{
+	  width: 80%;
+	  margin-left: 6%;
+ 
+	
+   }
+}
+
+@media (max-width: 600px) {
+ .col3{
+	  width: 80%;
+	  margin-left: 10%;
+	
+   }
+   h1.site_title {
+	font-size: 1.4em;
+	line-height: 2em;
+ 
+}
+}
 
 /* @end */
  
