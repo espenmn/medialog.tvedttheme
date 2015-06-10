@@ -326,9 +326,9 @@ h2.slidetitle {
 	color: white;
 	background: #0b5f9b;
 	opacity: 0.85;
-	padding: 0.2em 0.8em 0.3em;
-	border-radius: 10px;
-	 
+	padding: 0.1em 0.5em 0.2em;
+	border-radius: 8px;
+	rotate(5deg);
 }
 
 p.slidedescription {
