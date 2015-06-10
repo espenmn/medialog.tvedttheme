@@ -34,7 +34,7 @@
   							  <a href="#" tal:attributes="href item_url">
                             	<h2 tal:content="item/Title" />
                               </a>
-                              <h3 tal:content="item/Description" />
+                              <p tal:content="item/Description" />
                             </div>
                         </div>            
 
