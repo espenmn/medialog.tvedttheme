@@ -12,23 +12,29 @@
  
                 <div class="features" >
                     <div tal:repeat="item 
-                    	 python: context.features.restrictedTraverse('@@folderListing')()"
+                    	python: context.features.restrictedTraverse('@@folderListing')()"
+                    	tal:define="item_url item/getURL|item/absolute_url"
                         class="col3 wow fadeInDown animated" 
                         data-wow-delay="600ms" data-wow-duration="1000ms" 
                         style="visibility: visible; animation-duration: 1000ms; 
                         animation-delay: 600ms; animation-name: fadeInDown;">
                         
                         <div class="feature-wrap fa">
+ 
+						   <a href="#" tal:attributes="href item_url">
                             <i class="fa" 
                             	tal:condition="exists:item/iconfield"
                             	tal:attributes="class item/iconfield">
                             </i>
+                            </a>
                              <i class="fa fa-info" 
                             	tal:condition="not:exists:item/iconfield">
                              </i>
                              <div class="feature-text">
-                            <h2 tal:content="item/Title" />
-                            <h3 tal:content="item/Description" />
+  							  <a href="#" tal:attributes="href item_url">
+                            	<h2 tal:content="item/Title" />
+                              </a>
+                              <h3 tal:content="item/Description" />
                             </div>
                         </div>            
 
