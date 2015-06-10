@@ -13,13 +13,13 @@
                 <div class="features" >
                     <div tal:repeat="item 
                     	python: context.features.restrictedTraverse('@@folderListing')()"
-                    	tal:define="item_url item/getURL|item/absolute_url"
                         class="col3 wow fadeInDown animated" 
                         data-wow-delay="600ms" data-wow-duration="1000ms" 
                         style="visibility: visible; animation-duration: 1000ms; 
                         animation-delay: 600ms; animation-name: fadeInDown;">
                         
-                        <div class="feature-wrap fa">
+                        <div class="feature-wrap fa"
+                        	tal:define="item_url item/getURL|item/absolute_url">
  
 						   <a href="#" tal:attributes="href item_url">
                             <i class="fa" 
