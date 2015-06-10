@@ -8,9 +8,7 @@
     <rules css:if-content="#visual-portal-wrapper">
  
         <theme href="theme.html" />
- 
-        
-        
+    
         <replace content="/html/head/title" theme="/html/head/title" />
         <replace content="/html/head/base" theme="/html/head/base" />
         <!-- replace content="/html/head/meta" theme="/html/head/meta" / -->
@@ -22,9 +20,9 @@
         <!-- Pull in Plone CSS -->
         <!-- after theme-children="/html/head" content="/html/head/link | /html/head/style-" /-->
 
-
         <!-- Pull in Plone JS -->
         <after theme-children="/html/head" content="/html/head/script" />
+        
         <!-- Personal tools, remove if you dont edit on mobile -->
         <replace css:content="#portal-personaltools" css:theme="#portal-personaltools" />
            <replace css:content="ul.mobileButtons" css:theme="ul.mobileButtons" />     
