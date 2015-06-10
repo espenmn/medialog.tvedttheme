@@ -10,8 +10,9 @@
    }
 
   h1.site_title {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	line-height: 3em;
+	padding-top: 1em;
 }
 }
 
@@ -22,8 +23,9 @@
 	
    }
    h1.site_title {
-	font-size: 1.2em;
-		line-height: 3em;
+	font-size: 1.4em;
+	line-height: 3em;
+	padding-top: 1em;
 }
 }
 
