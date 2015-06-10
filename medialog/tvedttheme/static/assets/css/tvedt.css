@@ -1436,7 +1436,7 @@ div#ajax-spinner {
   }
 	
   .col3{
-	  width: 80%;
+	  width: 85%;
 	  margin-left: 6%;
  
 	
@@ -1445,7 +1445,7 @@ div#ajax-spinner {
 
 @media (max-width: 600px) {
  .col3{
-	  width: 80%;
+	  width: 90%;
 	  margin-left: 10%;
 	
    }
