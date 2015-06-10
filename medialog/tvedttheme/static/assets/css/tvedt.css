@@ -1,5 +1,7 @@
 /* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
 
+/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
 
 
@@ -323,6 +325,11 @@ h2.slidetitle {
 	left: 10%;
 	color: white;
 	font-weight: bold;
+	background: #0b5f9b;
+	opacity: 0.85;
+	padding: 0.2em 0.8em 0.3em;
+	border-radius: 10px;
+	 
 }
 
 p.slidedescription {
@@ -331,6 +338,7 @@ p.slidedescription {
 	bottom: 20%;
 	left: 10.25%;
 	color: white;
+	font-size: 120%;
  
 }
 
