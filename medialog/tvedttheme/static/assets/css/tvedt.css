@@ -1448,6 +1448,10 @@ div#ajax-spinner {
 	  margin-left: 10%;
 	
    }
+   
+  div.feature-text {
+	width: 50%
+  }
    h1.site_title {
 	font-size: 1.4em;
 	line-height: 2em;
