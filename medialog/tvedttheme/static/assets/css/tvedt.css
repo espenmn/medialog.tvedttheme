@@ -1460,10 +1460,11 @@ div#ajax-spinner {
  
 }
 
-.feature-wrap i {
-  font-size: 30px;
-  height: 70px;
-  width: 70px;
+feature-wrap i {
+    font-size: 36px;
+    height: 70px;
+    line-height: 200%;
+    width: 70px;
 }
 }
 
