@@ -522,6 +522,7 @@ div.service-items {
 
 .features div {
 	float:  left;
+	width: 100%;
 }
 
 div.feature-text {
