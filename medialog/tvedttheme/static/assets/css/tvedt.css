@@ -1,3 +1,4 @@
+/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
 
@@ -329,10 +330,14 @@ margin: 0;
 padding: 0;	
 }
 
+ul#slider  li  {
+	max-height: 100%;
+}
+
 h2.slidetitle {
 	position: absolute;
 	z-index: 20;
-	top: 25%;
+	bottom: 35%;
 	left: 10%;
 	color: white;
 	font-weight: bold;
@@ -341,12 +346,14 @@ h2.slidetitle {
 p.slidedescription {
 	position: absolute;
 	z-index: 20;
-	top: 35s%;
+	bottom: 20%;
 	left: 10.25%;
 	color: white;
  
 }
 
+
+ 
 .image-left {
 	float:  left;
 	margin-right:  1em;
