@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
-<!-- This file holds the setup configuration for the portal_javascripts tool.
-     -->
+
 <object name="portal_javascripts">
-<javascript  id="++resource++collective.js.bootstrap/js/bootstrap.min.js" >
-<javascript  id="++theme++medialog.tvedttheme/assets/js/wow.min.js">
-<javascript  id="++theme++medialog.tvedttheme/assets/js/addtohomescreen.min.js">
-<javascript  id="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.min.js">
+ <javascript  id="++resource++collective.js.bootstrap/js/bootstrap.min.js" />
+ <javascript  id="++theme++medialog.tvedttheme/assets/js/wow.min.js" />
+ <javascript  id="++theme++medialog.tvedttheme/assets/js/addtohomescreen.min.js" />
+ <javascript  id="++resource++medialog.iconpicker/bootstrap-iconpicker/js/bootstrap-iconpicker.min.js" />
 
 </object>
