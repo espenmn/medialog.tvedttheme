@@ -31,7 +31,9 @@ setup(name='medialog.tvedttheme',
       install_requires=[
           'ftw.mobilenavigation',
           'plone.app.themingplugins',
-         'collective.themefragments',
+          'collective.themefragments',
+          'collective.js.bootstrap',
+          'medialog.iconpicker',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
