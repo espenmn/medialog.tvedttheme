@@ -328,7 +328,8 @@ h2.slidetitle {
 	opacity: 0.85;
 	padding: 0.1em 0.5em 0.2em;
 	border-radius: 8px;
-	rotate(5deg);
+	font-weight: normal;
+	font-style: normal;
 }
 
 p.slidedescription {
