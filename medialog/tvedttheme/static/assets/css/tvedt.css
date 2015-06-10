@@ -1,3 +1,5 @@
+/* @override http://tvedt.medialog.no/front-page/++theme++medialog.tvedttheme/assets/css/tvedt.css */
+
 /* @override 
 	http://localhost:8080/tvedt/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css
 	http://xweb14f.plana.dk:9084/tvedt/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css
@@ -334,8 +336,8 @@ padding: 0;
 }
 
 h2.slidetitle {
-	position: absolute;
-	z-index: 20;
+	position: fixed;
+	z-index: 520;
 	bottom: 30%;
 	left: 15%;
 	color: white;
@@ -1098,7 +1100,7 @@ img.button:hover {
 
 #viewlet-above-content  ul#slider{
 	margin-bottom:  0;
-	max-height: 700px;
+	/*max-height: 700px; */
 	overflow: hidden;
 }
 
