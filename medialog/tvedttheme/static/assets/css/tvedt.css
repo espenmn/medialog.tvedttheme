@@ -9,6 +9,9 @@
 	
    }
 
+  h1.site_title {
+	font-size: 1.4em;
+}
 }
 
 @media (max-width: 600px) {
@@ -18,7 +21,7 @@
 	
    }
    h1.site_title {
-	font-size: 1.8em;
+	font-size: 1.4em;
 }
 }
 
@@ -1103,6 +1106,7 @@ img.button:hover {
 	margin-bottom:  0;
 	/*max-height: 700px; */
 	overflow: hidden;
+	min-height: 260px;
 }
 
 #my_slider li {
