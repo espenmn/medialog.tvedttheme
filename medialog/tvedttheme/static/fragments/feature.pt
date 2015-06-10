@@ -2,7 +2,7 @@
 		 tal:define="folder_is nocall:context/features|nothing">
 	<link href="++theme++medialog.corlate/static/css/font-awesome.min.css" rel="stylesheet">
 
-    <div class="container"  tal:condition="folder_is">
+   		 <div class="container"  tal:condition="folder_is">
            <div class="center wow fadeInDown">
                 <h2 tal:content="context/features/Title" />
                 <p class="lead" 

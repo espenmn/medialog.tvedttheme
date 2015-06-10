@@ -1,8 +1,7 @@
 <section id="services" class="service-item"
 		 tal:define="folder_is nocall:context/services|nothing">
     <div class="service-container"  tal:condition="folder_is">
-    
- 
+
             <div class="center wow fadeInDown animated" 
            		style="visibility: visible; animation-name: fadeInDown;">
                 <h2 tal:content="context/services/Title" />
@@ -10,8 +9,8 @@
                 	tal:content="context/services/Description"  />
             </div>
             
-            <div class="service-items">
-		<div tal:repeat="item  
+        <div class="service-items">
+			<div tal:repeat="item  
                     	 python: context.services.restrictedTraverse('@@folderListing')()"
                     	class="col3 wow fadeInDown animated" 
                         data-wow-delay="600ms" data-wow-duration="1000ms" 
@@ -22,10 +21,12 @@
 					 	tal:define="item_url item/getURL|item/absolute_url"
 						style="visibility: visible; animation-name: fadeInDown;">
 						<div class="pull-left">
+						   <a href="#" tal:attributes="href item_url">
 							<img src="" alt=""  
 							    class="img-responsive pull-left"
                       	    	tal:attributes="alt item/Title; 
-                      	    		src python:item_url + '/image_thumb'" />
+                      	    		src python:item_url + '/image_tile'" />
+                      	    </a>
 						</div>
 						 
 						<div class="media-body">

@@ -45,7 +45,7 @@ h1.site_title {
 	font-weight: bold;
 	display: block;
 	line-height: 2em;
-	 color: #1c5375;
+	 color: #0b5f9b;
 }
 
 div.content.left{
@@ -477,7 +477,7 @@ textarea {
 }
 
 
-
+#services,
 #feature div.container{
   background: #f2f2f2;
   padding-left: 0;
@@ -488,8 +488,8 @@ textarea {
   height: auto;
   width: 100%;
 }
-
-
+ 
+#services h2,
 #feature h2 {
 	font-size: 2.3em;
 }
@@ -576,12 +576,9 @@ p.lead,
 }
 
 #services {
-	background: black;
-	min-height: 200px;
-	height: auto;
+	background: #005b93;
 	width: 100%;
 	max-width: 10000px;
-	clear: both;
 	float:left;
 }
 
@@ -597,10 +594,11 @@ div.service-container {
 }
 
 .services-wrap {
-  padding: 40px 30px;
+  padding: 25px 30px;
   background: #fff;
   border-radius: 4px;
   margin: 0 1em 40px;
+  min-height: 5em
 }
 
 .services-wrap h3 {
@@ -609,7 +607,8 @@ div.service-container {
 }
 
 .services-wrap .pull-left {
-  margin-right: 20px;
+  margin: 0.5em 1em 0 0;
+  
 }
 
 
@@ -869,8 +868,9 @@ div.top {
 
 .footer {
 	clear:  both;
-	border-bottom:  1px solid #565656;
-	border-top:  1px solid #565656;
+	  background: #f2f2f2;
+	  padding-top: 0.5em;
+	  padding-bottom: 1em;
 }
 
 .menu {
