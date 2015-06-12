@@ -119,7 +119,7 @@ body.fp-viewing {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  padding-top: 13%;
+  padding-top: 100px;
   overflow: hidden;
  
 }
