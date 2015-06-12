@@ -360,6 +360,7 @@ p.slidedescription {
 
  
 .image-framed {
+	margin: 0 1em 1em 0;
 	float:  left;
 	border:  1px solid silver;
 	padding: 6px;
