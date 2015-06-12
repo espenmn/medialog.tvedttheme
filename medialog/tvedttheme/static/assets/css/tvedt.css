@@ -1,6 +1,9 @@
-/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
-
-/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
+/* @override 
+	http://xweb14f.plana.dk:9084/servicekompaniet/++theme++servicekompaniet/++theme++medialog.tvedttheme/assets/css/tvedt.css
+	http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css
+	http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css
+	http://xweb14f.plana.dk:9084/servicekompaniet/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css
+*/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
 
@@ -354,6 +357,14 @@ p.slidedescription {
 	float:  right;
 	margin-left:  1em;
 }
+
+ 
+.image-framed {
+	float:  left;
+	border:  1px solid silver;
+	padding: 6px;
+}
+
 
 div.module .relatedImage img {
 	margin-bottom: 0.5em;
@@ -741,6 +752,7 @@ table.plain th {
 form label {
 	font-size: 12px;
 	margin-bottom: 0.4em;
+	display: inline;
 }
 
 form.contact-form {
@@ -1033,13 +1045,10 @@ div#content {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+ 
 }
 
-img.tileImage {
-	float: left;
-	margin-right: 1em;
-	margin-bottom: 1em;
-}
+
 
 
 img.newsImage {
