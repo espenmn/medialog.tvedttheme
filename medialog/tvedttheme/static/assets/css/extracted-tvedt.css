@@ -1,3 +1,5 @@
+/* @override http://xweb14f.plana.dk:9084/servicekompaniet/++theme++servicekompaniet/++theme++medialog.tvedttheme/assets/css/tvedt.css */
+
 /* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
 
 /* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
@@ -324,19 +326,19 @@ h2.slidetitle {
 	bottom: 35%;
 	left: 10%;
 	color: white;
-	font-weight: bold;
 	background: #0b5f9b;
 	opacity: 0.85;
-	padding: 0.2em 0.8em 0.3em;
-	border-radius: 10px;
-	 
+	padding: 0.1em 0.5em 0.2em;
+	border-radius: 8px;
+	font-weight: normal;
+	font-style: normal;
 }
 
 p.slidedescription {
 	position: absolute;
 	z-index: 20;
 	bottom: 20%;
-	left: 10.25%;
+	left: 10.5%;
 	color: white;
 	font-size: 120%;
  
@@ -481,13 +483,13 @@ textarea {
 #services,
 #feature div.container{
   background: #f2f2f2;
-  padding-left: 0;
-  padding-right:  0;
+  padding-left: 4%;
+  padding-right:  4%;
   margin: 0;
   padding-bottom: 40px;
   padding-top: 40px;
   height: auto;
-  width: 100%;
+  width: 92%;
 }
  
 #services h2,
@@ -590,7 +592,6 @@ p.lead,
 
 #services {
 	background: #005b93;
-	width: 100%;
 	max-width: 10000px;
 	float:left;
 }
@@ -742,6 +743,7 @@ table.plain th {
 form label {
 	font-size: 12px;
 	margin-bottom: 0.4em;
+	display: inline;
 }
 
 form.contact-form {
@@ -1429,30 +1431,58 @@ div#ajax-spinner {
 	}
 
 
-@media  (max-width: 840px) {
+@media  (max-width: 880px) {
 
   div.feature-text {
 	width: 69%
   }
 	
   .col3{
-	  width: 80%;
-	  margin-left: 6%;
+	  width: 48%;
+	  margin-right: 3%;
  
 	
    }
+
+   .col3:nth-child(odd){
+	  clear:  both;
+   }
+      
+   .col3:nth-child(even){
+	  margin-right: 0;
+   }
+   
+   .feature-wrap i {
+    font-size: 36px;
+    height: 70px;
+    line-height: 200%;
+    width: 70px;
+}
+   
 }
 
 @media (max-width: 600px) {
  .col3{
-	  width: 80%;
+	  width: 90%;
 	  margin-left: 10%;
 	
    }
+   
+  div.feature-text {
+	width: 40%;
+	font-size: 90%;
+  }
    h1.site_title {
 	font-size: 1.4em;
 	line-height: 2em;
  
+}
+
+.feature-wrap i {
+    font-size: 36px;
+    height: 70px;
+    line-height: 200%;
+    width: 70px;
 }
 }
 

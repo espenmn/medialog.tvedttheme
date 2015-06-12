@@ -1,4 +1,7 @@
-/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/authoring.css */
+/* @override 
+	http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/authoring.css
+	http://xweb14f.plana.dk:9084/servicekompaniet/++theme++servicekompaniet/++theme++medialog.tvedttheme/assets/css/authoring.css
+*/
 
 /* Editable border */
 
@@ -186,6 +189,17 @@
 #templateMenu li a {
     padding-left: 16px;
 }
+
+div.action {
+   margin-right: 0.5em;
+	float: left;
+}
+
+/* #portal-column-one {
+clear: both;	
+}
+*/ 
+
 /*
 ** end ECMAScript Content Action Menus
 */
