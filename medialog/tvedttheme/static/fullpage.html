@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mobile Theme Two</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mobile Theme for Plone for use with zettwerk.mobiletheming">
+    <meta name="author" content="Espen Moe-Nilssen">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" sizes="196x196" 
+    	href="++theme++medialog.tvedttheme/assets/images/addbutton.png">
+    <link rel="apple-touch-icon"  sizes="196x196" 
+    	href="++theme++medialog.tvedttheme/assets/images/addbutton.png">
+    <link href="++theme++medialog.tvedttheme/assets/css/tvedt.css" rel="stylesheet">
+    <link href="++theme++medialog.tvedttheme/assets/css/navigation.css" rel="stylesheet">
+ 
+    <link href="++theme++medialog.tvedttheme/assets/css/invisibles.css"   rel="stylesheet">
+ 
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  	<!-- bootstrap + core CSS -->
+	<link href="++theme++medialog.tvedttheme/assets/css/font-awesome.min.css" rel="stylesheet">
+    <!--link href="++theme++medialog.tvedttheme/assets/css/bootstrap.min.css" rel="stylesheet" -->    
+    <link href="++theme++medialog.tvedttheme/assets/css/animate.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>	
+
+<body>
+  <div id="mainnav">
+  	<ul id="portal-globalnav" />
+  </div>
+ 
+  	<div id="content-core" />
+ 
+</body>
+
+    <!-uncomment these for old jqueryui & jquery -->
+	<!--script src="++resource++plone.app.jquery.js"></script-->
+	<!-- script src="collective.js.jqueryui.custom.min.js"></script-->
+	<script type="text/javascript" src="++theme++medialog.fullpagetheme/static/jquery.fullPage.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#content-core').fullpage({
+			    sectionSelector: '.section .visualIEFloatFix',
+				menu: "#menu",
+        		fixedElements: '#menu',
+        		responsive: 1,
+			});
+		});		
+	</script>
+
+</html>
+
+ 
