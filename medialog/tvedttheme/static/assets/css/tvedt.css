@@ -1,3 +1,5 @@
+/* @override http://xweb14f.plana.dk:9084/servicekompaniet/++theme++servicekompaniet/++theme++medialog.tvedttheme/assets/css/tvedt.css */
+
 /* @override 
 	http://xweb14f.plana.dk:9084/servicekompaniet/++theme++servicekompaniet/++theme++medialog.tvedttheme/assets/css/tvedt.css
 	http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css
@@ -104,6 +106,36 @@ body {
 	margin: 0 auto;
 	background: white !important;
 	
+}
+
+.fullpage-wrapper .fp-section  {
+	background: #006F9A;   
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  padding-top: 13%;
+  overflow: hidden;
+ 
+}
+
+.fp-tableCell {
+	display: none;
+}
+.active div.fp-tableCell {
+	padding: 2em;
+	background: white;
+	opacity: 0.95;
+	width: 500px;
+	height: 300px !important;
+	max-width: 100%;
+	margin: auto;
+	display: inherit;
+ }
+
+.fullpage-wrapper .fp-section:nth-child(even) {
+	background:  #1c5375;
 }
 
 #portal-columns {
@@ -360,7 +392,6 @@ p.slidedescription {
 
  
 .image-framed {
-	margin: 0 1em 1em 0;
 	float:  left;
 	border:  1px solid silver;
 	padding: 6px;
