@@ -1,4 +1,5 @@
- 
+/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/authoring.css */
+
 /* Editable border */
 
 .contentViews {
@@ -375,6 +376,16 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
     font-weight: normal !important;
     font-size: 85%;
 }
+
+
+div.formControls  .button-field,
+#folderlisting-main-table input.context {
+	width: auto;
+}
+
+ 
+ 
+
 /* Used on all descriptions relevant to those not logged in */
 .portalNotLoggedIn {} 
 
@@ -412,7 +423,7 @@ dl.searchResults .highlightedSearchTerm {
 ul.formTabs {
     position: relative;
     display: block;
-    margin: 0 0 -2em 0;
+    margin: 0 0 3px 0;
     padding: 0;
     list-style-type: none;
     text-align: center;
@@ -464,8 +475,9 @@ li.formTab a.notify:hover {
     background-color: #ff9900;
 }
 .formPanel {
-    padding: 1em 1em 1em 1em; 
-    border: 1px solid #999999;
+    padding: 3	em 1em 1em 1em; 
+ 
+    clear: both;
 }
 .formPanel.hidden {
     display: none;
@@ -473,6 +485,14 @@ li.formTab a.notify:hover {
 div.formControls input.hidden {
     display: none;
 }
+
+/* buttons */
+
+span.actionButtons input{
+ 
+	width: auto;
+}
+
 
 /* @group content history */
 

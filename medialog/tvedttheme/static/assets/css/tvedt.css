@@ -481,13 +481,13 @@ textarea {
 #services,
 #feature div.container{
   background: #f2f2f2;
-  padding-left: 0;
-  padding-right:  0;
+  padding-left: 4%;
+  padding-right:  4%;
   margin: 0;
   padding-bottom: 40px;
   padding-top: 40px;
   height: auto;
-  width: 100%;
+  width: 92%;
 }
  
 #services h2,
@@ -522,7 +522,6 @@ div.service-items {
 
 .features div {
 	float:  left;
-	width: 100%;
 }
 
 div.feature-text {
@@ -591,7 +590,6 @@ p.lead,
 
 #services {
 	background: #005b93;
-	width: 100%;
 	max-width: 10000px;
 	float:left;
 }
@@ -1430,18 +1428,34 @@ div#ajax-spinner {
 	}
 
 
-@media  (max-width: 840px) {
+@media  (max-width: 880px) {
 
   div.feature-text {
 	width: 69%
   }
 	
   .col3{
-	  width: 85%;
-	  margin-left: 6%;
+	  width: 48%;
+	  margin-right: 3%;
  
 	
    }
+
+   .col3:nth-child(odd){
+	  clear:  both;
+   }
+      
+   .col3:nth-child(even){
+	  margin-right: 0;
+   }
+   
+   .feature-wrap i {
+    font-size: 36px;
+    height: 70px;
+    line-height: 200%;
+    width: 70px;
+}
+   
 }
 
 @media (max-width: 600px) {
@@ -1461,7 +1475,7 @@ div#ajax-spinner {
  
 }
 
-feature-wrap i {
+.feature-wrap i {
     font-size: 36px;
     height: 70px;
     line-height: 200%;
