@@ -110,6 +110,10 @@ body {
 	
 }
 
+body.fp-viewing { 
+    padding-top:  0;	
+} 
+
 .fullpage-wrapper .fp-section  {
 	background: #006F9A;   
 	-webkit-background-size: cover;
@@ -121,10 +125,13 @@ body {
   overflow: hidden;
  
 }
+.fp-tableCell .description {
+	margin-bottom: 1em;
+	margin-top:  1em;;
+}
 
 .fp-tableCell {
 	display: none;
-	overflow: visible;
 }
 .active div.fp-tableCell {
 	padding: 2em;
@@ -132,13 +139,10 @@ body {
 	opacity: 0.95;
 	width: 500px;
 	height: auto !important;
-	overflow: scrollt;
 	max-width: 100%;
 	margin: auto;
 	display: inherit;
  }
-
- 
 
 .fullpage-wrapper .fp-section:nth-child(even) {
 	background:  #1c5375;
@@ -229,6 +233,8 @@ h6 {
 #parent-fieldname-description {
     margin-bottom: 1em;
 }
+
+ 
 
 abbr[title] {
 	border-bottom: 1px dotted;
