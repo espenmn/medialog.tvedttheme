@@ -1,3 +1,5 @@
+/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
+
 /* @override http://xweb14f.plana.dk:9084/servicekompaniet/++theme++servicekompaniet/++theme++medialog.tvedttheme/assets/css/tvedt.css */
 
 /* @override 
@@ -122,17 +124,21 @@ body {
 
 .fp-tableCell {
 	display: none;
+	overflow: visible;
 }
 .active div.fp-tableCell {
 	padding: 2em;
 	background: white;
 	opacity: 0.95;
 	width: 500px;
-	height: 300px !important;
+	height: auto !important;
+	overflow: scrollt;
 	max-width: 100%;
 	margin: auto;
 	display: inherit;
  }
+
+ 
 
 .fullpage-wrapper .fp-section:nth-child(even) {
 	background:  #1c5375;
