@@ -108,6 +108,10 @@ body {
 	
 }
 
+body.fp-viewing { 
+    padding-top:  0;	
+} 
+
 .fullpage-wrapper .fp-section  {
 	background: #006F9A;   
 	-webkit-background-size: cover;
@@ -128,7 +132,7 @@ body {
 	background: white;
 	opacity: 0.95;
 	width: 500px;
-	height: 300px !important;
+	height: auto !important;
 	max-width: 100%;
 	margin: auto;
 	display: inherit;
