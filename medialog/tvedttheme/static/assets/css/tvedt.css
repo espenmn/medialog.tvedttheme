@@ -1,3 +1,5 @@
+/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
+
 /* @override http://xweb14f.plana.dk:9084/servicekompaniet/++theme++servicekompaniet/++theme++medialog.tvedttheme/assets/css/tvedt.css */
 
 /* @override 
@@ -107,6 +109,36 @@ body {
 	background: white !important;
 	
 }
+
+#menu {
+    left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+	list-style-type: none;
+	list-style-image: none;
+	margin: auto;
+	width: auto;
+	display: block;
+	text-align: center;
+	padding-top: 1.3em;
+}
+
+#menu li {
+    background: white;
+    opacity: 0.8;
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    margin: 0.4em;
+	display: inline;
+}
+
+#menu li.active a{
+	color:  black;
+}
+
 
 body.fp-viewing { 
     padding-top:  0;	
