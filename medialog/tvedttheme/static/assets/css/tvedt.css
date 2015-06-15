@@ -224,8 +224,12 @@ h6 {
 	margin: 0 0 1.3em 0;
 }
 
+div.description ,
 #parent-fieldname-description {
     margin-bottom: 1em;
+    line-height: 135%;
+    margin-top: 1em;
+ 
 }
 
 abbr[title] {
