@@ -18,7 +18,14 @@ ul#portal-globalnav {
 	position: relative;
 }
 
-
+.fp-viewing-0 .top {
+	z-index: 3;
+	position: absolute;
+	left: 0;
+	right: 0;
+	float: left;
+	width: 100%;
+}
 #portal-logo img {
 	margin: 0;
 }
@@ -152,7 +159,7 @@ body.fp-viewing {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 160px;
   overflow: hidden;
  
 }
