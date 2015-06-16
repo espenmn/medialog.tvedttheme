@@ -18,5 +18,18 @@
       />
 
   <plone:static type="theme" directory="static" />
+  
+  
+  <browser:page
+    name="fullpage"
+    permission="zope2.View"
+    for="plone.app.collection.interfaces.ICollection"
+    template="templates/fullpage.pt"
+    />
+ 
+  <browser:menuItem
+      title="Fullpage"
+      action="fullpage"
+      />
  
 </configure>
