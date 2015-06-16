@@ -43,8 +43,11 @@
         <replace css:content="#edit-bar" css:theme="#edit-bar" />
        
        
-        <!--content, skipped left and right columns-->
+        <!--content, for Plone 4-->
         <replace css:content="#portal-columns" css:theme="#portal-columns" />
+        
+        <!--content, for Plone 5-->
+        <!--replace css:content="#portal-column-content" css:theme="#portal-columns" /-->
         
           <!-- sections on homepage only -->
   		<rules css:if-content="body.template-document_view.section-front-page">
