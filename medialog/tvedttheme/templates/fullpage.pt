@@ -6,7 +6,7 @@
       metal:use-macro="here/main_template/macros/master"
       i18n:domain="plone">
 
-<body>
+<body class="fullpage">
 
 <metal:content-core fill-slot="content-core">
 <metal:block use-macro="context/standard_view/macros/content-core">
