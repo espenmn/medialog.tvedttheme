@@ -13,6 +13,11 @@
 			<replace css:content="#content-core" css:theme="#content-core" />
        		<replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
        	</rules>
+       	
+        <rules css:if-content=".template-fullpage">
+			<theme href="fullpage.html" />
+			<replace css:content="#content-core" css:theme="#content-core" />
+       	</rules>
 
         <theme href="theme.html" />
     
