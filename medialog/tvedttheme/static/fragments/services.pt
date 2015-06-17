@@ -25,7 +25,7 @@
 							<img src="" alt=""  
 							    class="img-responsive pull-left"
                       	    	tal:attributes="alt item/Title; 
-                      	    		src python:item_url + '/image_tile'" />
+                      	    		src python:item_url + '/@@images/image/tile'" />
                       	    </a>
 						</div>
 						 
