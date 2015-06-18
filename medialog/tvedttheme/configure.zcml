@@ -24,15 +24,16 @@
   <browser:page
     name="fullpage"
     permission="zope2.View"
-    for="plone.app.collection.interfaces.ICollection"
+    for="zope.location.interfaces.IContained"
     template="templates/fullpage.pt"
     />
  
+
  
    <!-- MENU ITEMS -->
 
   <browser:menuItems
-    for="plone.app.collection.interfaces.ICollection"
+    for="zope.location.interfaces.IContained"
     menu="plone_displayviews">
   <browser:menuItem
       title="Fullpage"
