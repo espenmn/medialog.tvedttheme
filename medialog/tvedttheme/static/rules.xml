@@ -60,6 +60,12 @@
    			<drop css:theme="#feature" />    
     		<drop css:theme="#services" />
  		 </rules>
+ 		 
+ 		 <merge
+    		attributes="class"
+    		css:content="body"
+    		css:theme="body"
+    	/>
 
 
     </rules>
