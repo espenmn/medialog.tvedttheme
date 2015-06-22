@@ -310,35 +310,32 @@ div.container {
 }
 
 .template-galleryview div.contakt-info {
-	bottom: 40px;
+	bottom: 0;
 	position: fixed}
 
 td#portal-column-content {
 	
 }
 	
-.template-galleryview .top {
-	margin-top: 10vh; 
-	}
 	
 .template-galleryview #portal-breadcrumbs {
 	display: none;
 }
 	
-.template-galleryview .top,
+
 .template-galleryview  #portal-column-content>div{
 	background: white;
-	width: 50%;
+	width: 50vw;
 	padding: 0;
+	margin-top: 20vh;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 12px;
+}
 
-	}
 
-html,
-ul#supersized {
-	margin: 0 !important;
-	padding: 0 important
+#supersized img {
+	margin-top: 65px;
 }
 
 #supersized-loader {
