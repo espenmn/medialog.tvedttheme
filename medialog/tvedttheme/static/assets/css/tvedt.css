@@ -1,3 +1,8 @@
+/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+
+
 
 /* @group Deco */
 
@@ -122,9 +127,12 @@ h1.site_title {
 	display: block;
 	line-height: 1.1em;
 	 color: #0b5f9b;
- 
 	margin-left: 0.8em;
 
+}
+
+#portal-logo a :hover{
+	text-decoration: none;
 }
 
 div.content.left{
@@ -711,6 +719,10 @@ div.feature-text {
 	width: 47%;
 }
 
+#feature .feature-text p {
+	font-size: 110%
+}
+ 
 
 .feature-wrap {
   margin-bottom: 35px;
@@ -747,7 +759,7 @@ p.lead,
   font-size: 48px;
   height: 110px;
   width: 110px;
-  margin: 3px;
+  margin: 20px 25px 3px 3px;
   border-radius: 100%;
   line-height: 110px;
   text-align:center;
@@ -761,7 +773,6 @@ p.lead,
   -o-transition: 500ms;
   transition: 500ms;
   float: left;
-  margin-right: 25px;
 	font-weight: normal;
 	font-style: normal !important;
 }
@@ -1044,7 +1055,7 @@ body {
 div.top {
    max-width: 1000px;
    margin: auto;
-   min-height: 75px;
+   min-height: 57px;
    	
 }
 
@@ -1157,6 +1168,8 @@ div.top {
 #portal-breadcrumbs {
 		padding: 0.7em 30px;
 		color: #AAA;
+		max-width: 940px;
+		margin: auto;
 }
 
 div#portal-breadcrumbs a {
