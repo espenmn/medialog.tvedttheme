@@ -37,6 +37,7 @@
                             	<p tal:content="item/Description" />
                             	
                         </div>
+                        <div class="clear"> </div>
                     </div>
                 </div>
             </div>
