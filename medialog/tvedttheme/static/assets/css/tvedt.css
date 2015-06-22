@@ -262,8 +262,14 @@ padding: 2vh 3vw;
  
  
 
+.fullpage-wrapper .fp-section  {
+	background: #006F9A;   
+}
+
+
+
 .fullpage-wrapper .fp-section:nth-child(even) {
-	background: #79b01b;
+	background:  #1c5375;
 }
 
 #portal-columns {
@@ -494,7 +500,7 @@ h2.slidetitle {
 	bottom: 35%;
 	left: 10%;
 	color: white;
-	background: #6a9418;
+	background: #0b5f9b;
 	opacity: 0.85;
 	padding: 0.1em 0.5em 0.2em;
 	border-radius: 8px;
@@ -769,7 +775,7 @@ p.lead,
 }
 
 #services {
-	background: #6a9418;
+	background: #005b93;
 	max-width: 10000px;
 	float:left;
 }
@@ -1147,12 +1153,28 @@ div.top {
 }
 
 
+
+#portal-breadcrumbs {
+		padding: 0.7em 30px;
+		color: #AAA;
+}
+
+div#portal-breadcrumbs a {
+	color: #598cb0;
+	text-decoration: underline;
+}
+
+span.breadcrumbSeparator {
+	padding: 0 5px;
+}
+
+
 .meny   {
-	background: url('++theme++medialog.tvedttheme/assets/IcoMoon/Icons/png/32px/file-pdf.png') no-repeat;
+	background: url('/assets/IcoMoon/Icons/png/32px/file-pdf.png') no-repeat;
 }
  
 .bell   {
-	background: url('++theme++medialog.tvedttheme/assets/IcoMoon/Icons/png/32px/book.png') no-repeat;
+	background: url('/assets/IcoMoon/Icons/png/32px/book.png') no-repeat;
 }
 
 ul.small {
