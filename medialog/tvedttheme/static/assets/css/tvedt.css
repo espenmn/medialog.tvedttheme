@@ -69,6 +69,7 @@ div.right {
 
 a {
 	text-decoration: none;
+	color: #006c9a;
 }
 
 h2.tileHeadline a.summary.url {
@@ -186,6 +187,7 @@ body.fp-viewing {
 
 #portal-columns {
 	margin: auto;
+	
 }
 
 .documentEditable,
@@ -218,9 +220,6 @@ div.container{
 	padding-bottom:  1em;
 }
 
-a {
-	color: #006F9A;
-}
 
 a:focus {
 	outline: thin dotted;
@@ -1092,10 +1091,26 @@ ul.small a {
 	clear:  both;
 	border-top:  1px solid #DDD;
 	border-bottom:  1px solid #DDD;
-
+ 
 }
 
-div#content {
+#portal-breadcrumbs {
+		padding: 0.7em 30px;
+		color: #AAA;
+}
+
+div#portal-breadcrumbs a {
+	color: #598cb0;
+	text-decoration: underline;
+}
+
+span.breadcrumbSeparator {
+	padding: 0 5px;
+}
+
+
+
+#content {
 	max-width: 940px;
 	padding: 40px 30px;
 	margin: auto;
@@ -1125,12 +1140,8 @@ div#content {
 	max-width: 100%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
- 
+	box-sizing: border-box; 
 }
-
-
-
 
 img.newsImage {
 	margin: 0.3em 0 0.5em 1em;
@@ -1190,10 +1201,10 @@ img.button:hover {
 
 
 #viewlet-above-content  ul#slider{
-	margin-bottom:  0;
+	margin: 0 auto;
 	/*max-height: 700px; */
 	overflow: hidden;
-	min-height: 260px;
+	min-height: 300px;
 }
 
 #my_slider li {
