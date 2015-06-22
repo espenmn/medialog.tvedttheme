@@ -25,7 +25,7 @@
         <drop theme="/html/head/style" />
 
         <!-- Pull in Plone CSS -->
-        <!-- after theme-children="/html/head" content="/html/head/link | /html/head/style-" /-->
+        <after theme-children="/html/head" content="/html/head/link | /html/head/style-" />
 
         <!-- Pull in Plone JS -->
         <after theme-children="/html/head" content="/html/head/script" />
@@ -51,7 +51,6 @@
         
           <!-- sections on homepage only -->
   		<rules css:if-content="body.template-document_view.section-front-page">
-  		    <replace css:theme="#main-slider" css:content="#main-slider" href="/@@theme-fragment/mainslider" />
 			<replace css:theme="#feature"     css:content="#feature"     href="/@@theme-fragment/feature" />   
     		<replace css:theme="#services"    css:content="#services"    href="/@@theme-fragment/services" /> 
 
