@@ -197,8 +197,7 @@ body {
 	font-family:  'Open Sans',  Arial, Helvetica, sans-serif;
 	width: 100%;
 	margin: 0 auto;
-	background: white !important;
-	
+
 }
 
 #menu {
@@ -309,6 +308,48 @@ div.container {
 	clear: both;
     display: block;
 }
+
+.template-galleryview div.contakt-info {
+	bottom: 40px;
+	position: fixed}
+
+td#portal-column-content {
+	
+}
+	
+.template-galleryview .top {
+	margin-top: 10vh; 
+	}
+	
+.template-galleryview #portal-breadcrumbs {
+	display: none;
+}
+	
+.template-galleryview .top,
+.template-galleryview  #portal-column-content>div{
+	background: white;
+	width: 50%;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+
+	}
+
+html,
+ul#supersized {
+	margin: 0 !important;
+	padding: 0 important
+}
+
+#supersized-loader {
+	display: none;
+}
+	
+.template-galleryview  div.outer-content{
+	border:  0 none ;
+}
+ 
+
 div.container{
 	clear:  both;
 
