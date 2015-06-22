@@ -131,8 +131,9 @@ h1.site_title {
 
 }
 
-#portal-logo a :hover{
+#portal-logo a:hover{
 	text-decoration: none;
+	color: #00365a;
 }
 
 div.content.left{
