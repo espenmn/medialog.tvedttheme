@@ -1,7 +1,7 @@
-/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/navigation.css */
-
-/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/navigation.css */
-
+/* @override 
+	http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/navigation.css
+	http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/navigation.css
+*/
 
 /* @group dropdown */
 
@@ -230,7 +230,6 @@ ul.submenu {
 	z-index: 4;
     list-style:none;
     padding-left: 0;
-    margin-top: 0.7em;
 }
 
 .mobileButtons a {
@@ -238,7 +237,7 @@ ul.submenu {
 	height: 24px;
 	padding: 16px;
 	display: block;
-	background: url(++resource++ftw.mobilenavigation/mobile_buttons.png) no-repeat center center #aaa;
+	background: transparent url(++resource++ftw.mobilenavigation/mobile_buttons.png) no-repeat center center #aaa;
 	float: right;
 }
 

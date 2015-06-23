@@ -330,13 +330,14 @@ div.container {
 }
 	
 
-.template-galleryview  #portal-column-content>div{
+.template-galleryview  #portal-column-content {
 	background: white;
 	width: 50vw;
 	margin-top: 20vh;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 12px;
+	padding: 2vh 2vw;
 }
 
 .template-galleryview  div.social {
@@ -1284,7 +1285,7 @@ div#content {
 } 
 
 #portal-column-two {
-	float:  right;
+	float: left;
 }
 
 .portletItem.odd {
@@ -1722,6 +1723,11 @@ div#ajax-spinner {
 
 @media  (max-width: 1000px) {
 
+div#portal-column-content {
+	max-width: 960px !important;
+}
+
+#portal-breadcrumbs,
 #portal-column-content{
 	margin: 0 20px;
 }
@@ -1759,6 +1765,9 @@ div#ajax-spinner {
 	padding: 1em 2em;	
  }
 
+.mobileButtons li {
+	border-left: 1px solid black;
+}
 
  
  .col3{
@@ -1779,9 +1788,9 @@ div#ajax-spinner {
   }
   
    h1.site_title {
-	font-size: 1.4em;
-	line-height: 2em;
- 
+	font-size: 2em;
+	line-height: 1.1em;
+ 	color:  black;;
    }
 
 .feature-wrap i {
