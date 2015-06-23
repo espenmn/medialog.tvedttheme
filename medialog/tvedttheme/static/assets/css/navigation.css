@@ -1,47 +1,197 @@
+/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/navigation.css */
 
-#portal-globalnav  {
-	clear: both;
-	margin:  auto ;
-	display: none;
-	z-index: 95;
-	background: white;
+
+/* @group dropdown */
+
+ 
+ul.submenu {
+	width: 100%;
+	top:  0px;
+	left: 0;
+	right: 0;
+ 	display: none;
+	position: absolute;
+	height: 150px;
+
 }
-
-#portal-globalnav li {
+#portal-globalnav  ul.submenu {
+	z-index:3;
+}
+#portal-globalnav li:hover ul.submenu{
 	display: block;
-	margin: 5px;
-	position: relative;
-	border: 1px solid #aaa;
-	border-radius: 5px;
-	moz-border-radius: 5px;
-	background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ 
+}
+#portal-globalnav ul.submenu a  {
+ background:transparent;
+ color: transparent;
+	background: oldlace;
+	display: inline-block;
+	line-height: 125px;
+	width: 200px;
+	height: 200px;
+}
+#portal-globalnav ul.submenu a:hover {
+  color:  red;
+ 
 }
 
-#portal-globalnav   li.expanded:hover {
-	background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ul.submenu:hover {
+ 
+ 
+ 
 }
 
-#portal-globalnav li.expanded a:hover {
-	color: #000;
-	font-weight: bold;
+
+/* */
+  
+/* @end */
+
+
+@media  (max-width: 1000px) {
+	#portal-globalnav  {
+		clear: both;
+		margin:  auto ;
+		display: none;
+		z-index: 95;
+		background: white;
+	    position: relative;
+	}
+	
+	#portal-globalnav li {
+		display: block;
+		margin: 5px;
+		position: relative;
+		border: 1px solid #aaa;
+		border-radius: 5px;
+		moz-border-radius: 5px;
+		background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	}
+	
+	#portal-globalnav   li.expanded:hover {
+		background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	}
+	
+	#portal-globalnav li.expanded a:hover {
+		color: #000;
+		font-weight: bold;
+	}
+	
+	#portal-globalnav  li a {
+		background: transparent;
+		padding: 10px 3%;
+		color: #333;
+		width: auto;
+		line-height: 20px;
+		font-size: 120%;
+		display: block;
+	}
+	
+
+	#portal-globalnav   li:hover {
+		background: linear-gradient(to bottom, #DDD 0%, #777 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	}
+	
+	#portal-globalnav   li a:hover {
+		color: #FFF;
+	}
+	
+		
+		
+	.globalnav li a.slide,
+	.globalnav li.noChildren a,
+	#portal-globalnav.mobileNavigation li.noChildren a,
+	#portal-globalnav.mobileNavigation li a.loadChildren {
+		margin-right: 0;
+	}
+	
+	#portal-globalnav.mobileNavigation li a.loadChildren {
+		background: url(++resource++ftw.mobilenavigation/expandme-navi.png) no-repeat center center;
+		position: absolute;
+		width: 60px;
+		font-size: 1px;
+		padding-left: 0;
+		padding-right: 0;
+		top: 0;
+		right: 0px;
+	}
+	
+	#portal-globalnav.mobileNavigation li.expanded > a.loadChildren {
+		background: url(++resource++ftw.mobilenavigation/collapseme-navi.png) no-repeat center center;
+	}
+	
+	#portal-globalnav.mobileNavigation li.loading > a.loadChildren {
+		background: url(++resource++ftw.mobilenavigation/spinner.gif) no-repeat center center;
+	}
+	
+	#portal-globalnav.mobileNavigation li > ul {
+		display: none;
+	}
+	
+	#portal-globalnav.mobileNavigation li.expanded > ul {
+		display: block;
+	}
+	
+	 
+	
+	 
+	ul#portal-globalnav.mobileNavigation  > li.expanded > ul,
+	ul#portal-globalnav.mobileNavigation  .loadChildren {
+		display: none;
+	}
+	
+	ul#portal-globalnav.mobileNavigation  > li.expanded > ul,
+	ul#portal-globalnav.mobileNavigation  .loadChildren {
+		display: none;
+	}
+
 }
 
-#portal-globalnav  li a {
-	background: transparent;
-	padding: 10px 3%;
-	color: #333;
-	width: auto;
-	line-height: 20px;
-	font-size: 120%;
-	display: block;
+@media  (min-width: 900px) {
+	
+	#portal-globalnav {
+		display: block;
+		float: left;
+		left:20em;
+		top: 1.8em;
+		padding-left: 0;
+	    right:0;
+	    position: relative;
+	
+	}
+	
+ 	a#toggle_navigation {
+		display: none;
+	}
+	
+	#portal-globalnav li {
+		display: block;
+		float: left;
+	}
+	
+	#portal-globalnav li a {
+		padding: 0px 8px;
+		color: #a9a9a9;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 9pt;
+		border-right: 1px solid #a9a9a9;
+	}
+	
+	#portal-globalnav  li:last-child a {
+	border:  0 none;;
 }
+	
+	
+	#portal-globalnav li a:hover {
+		text-decoration: none;
+	}
+	
+	#portal-globalnav li.selected a {
+	color: #6b9322;
+	}
 
-#portal-globalnav   li:hover {
-	background: linear-gradient(to bottom, #DDD 0%, #777 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
 
-#portal-globalnav   li a:hover {
-	color: #FFF;
 }
 
 .mobileButtons a#toggle_navigation {
@@ -62,39 +212,6 @@
 	background-repeat: no-repeat;
 }
 
-.globalnav li a.slide,
-.globalnav li.noChildren a,
-#portal-globalnav.mobileNavigation li.noChildren a,
-#portal-globalnav.mobileNavigation li a.loadChildren {
-	margin-right: 0;
-}
-
-#portal-globalnav.mobileNavigation li a.loadChildren {
-	background: url(++resource++ftw.mobilenavigation/expandme-navi.png) no-repeat center center;
-	position: absolute;
-	width: 60px;
-	font-size: 1px;
-	padding-left: 0;
-	padding-right: 0;
-	top: 0;
-	right: 0px;
-}
-
-#portal-globalnav.mobileNavigation li.expanded > a.loadChildren {
-	background: url(++resource++ftw.mobilenavigation/collapseme-navi.png) no-repeat center center;
-}
-
-#portal-globalnav.mobileNavigation li.loading > a.loadChildren {
-	background: url(++resource++ftw.mobilenavigation/spinner.gif) no-repeat center center;
-}
-
-#portal-globalnav.mobileNavigation li > ul {
-	display: none;
-}
-
-#portal-globalnav.mobileNavigation li.expanded > ul {
-	display: block;
-}
 
 
 .mobileButtons {
@@ -104,6 +221,7 @@
 	z-index: 4;
     list-style:none;
     padding-left: 0;
+    margin-top: 0.7em;
 }
 
 .mobileButtons a {
@@ -121,20 +239,14 @@
 	float:right;
 }
 
- #portal-globalnav,
+ 
   #portal-personaltools dt.actionMenuHeader,
   #portal-searchbox {
 	display: none;
 	padding: 0;
 }
 
-ul#portal-globalnav  {
-	left:0;
-    right:0;
-    margin:0 ;
-    padding:0;
 
-}
 
 body.mobileNaviLoaded #portal-personaltools {
 	width: 100%;
@@ -182,12 +294,3 @@ body.mobileNaviLoaded #portal-personaltools a {
 	padding: 10px;	
 	margin: 0;
 }
-
- 
- #portal-globalnav,
- .globalnav,
-ul#portal-globalnav.mobileNavigation  > li.expanded > ul,
-ul#portal-globalnav.mobileNavigation  .loadChildren {
-	display: none;
-}
- 

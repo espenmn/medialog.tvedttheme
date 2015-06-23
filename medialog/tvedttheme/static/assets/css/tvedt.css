@@ -555,7 +555,10 @@ span.slidetext {
 	position: absolute;
 	z-index: 20;
 	bottom: 15%;
-	left: 10%;
+	left: 0;
+	right: 0;
+	width: 1000px;
+	margin: auto;
 }
 
 h2.slidetitle {
@@ -566,6 +569,7 @@ h2.slidetitle {
 	border-radius: 8px;
 	font-weight: normal;
 	font-style: normal;
+	display: inline;
 }
 
 p.slidedescription {
@@ -1717,8 +1721,11 @@ div#ajax-spinner {
 
 
 
-@media  (max-width: 900px) {
+@media  (max-width: 1000px) {
 
+#portal-column-content{
+	margin: 0 20px;
+}
   div.feature-text {
 	width: 69%
   }
