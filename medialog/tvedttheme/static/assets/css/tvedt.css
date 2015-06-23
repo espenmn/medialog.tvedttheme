@@ -170,7 +170,10 @@ label.horizontal,
 #formfield-form-widgets-IIconPickerBehavior-iconfield,
 fieldset#folder-listing,
 #formfield-form-widgets-ILeadImage-image_caption,
-div#formfield-form-widgets-ILeadImage-image,
+div#formfield-form-widgets-ILeadImage-image {
+	
+}
+
 [hidden] {
 	display: none;
 }
