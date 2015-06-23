@@ -185,7 +185,11 @@ ul.submenu {
 		font-size: 9pt;
 	}
 	
- 
+	#portal-globalnav li.selected, 
+	#portal-globalnav li:hover {
+	background: ##176198;
+	background: linear-gradient(to bottom,  #176198 0%,  #669fc1 1000%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	}
 	
 	#portal-globalnav li a:hover {
 		text-decoration: none;
@@ -193,7 +197,7 @@ ul.submenu {
 	
 	#portal-globalnav li a:hover,
 	#portal-globalnav li.selected a {
-	color: #176198;
+	color: white
 	}
 
 
