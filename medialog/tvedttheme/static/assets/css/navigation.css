@@ -37,11 +37,6 @@ ul.submenu {
  
 }
 
-ul.submenu:hover {
- 
- 
- 
-}
 
 
 /* */
@@ -196,6 +191,7 @@ ul.submenu:hover {
 		text-decoration: none;
 	}
 	
+	#portal-globalnav li a:hover,
 	#portal-globalnav li.selected a {
 	color: #176198;
 	}
