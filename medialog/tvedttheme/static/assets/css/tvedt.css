@@ -125,9 +125,9 @@ h1.site_title {
 	font-family: 'Open Sans',  'Source Sans Pro', sans-serif;
 	font-weight: bold;
 	display: block;
-	line-height: 1.4em;
+	line-height: 1.2em;
 	 color: #0b5f9b;
-	margin-left: 0.8em;
+
 
 }
 
@@ -288,6 +288,8 @@ padding: 2vh 3vw;
 div#inner-content,
 #portal-columns {
 	margin: -1px auto 0;
+	padding-top:  40px;
+	padding-bottom: 40px;
 	width: 100%;
 	max-width: 1000px;
 }
@@ -321,10 +323,7 @@ div.container {
 	bottom: 0;
 	position: fixed}
 
-td#portal-column-content {
-	
-}
-	
+
 	
 .template-galleryview #portal-breadcrumbs {
 	display: none;
@@ -1216,9 +1215,9 @@ div.top {
 
 
 #portal-breadcrumbs {
-		padding: 0.7em 30px;
+		padding: 0.7em 0;
 		color: #AAA;
-		max-width: 940px;
+		max-width: 1000px;
 		margin: auto;
 }
 
@@ -1287,7 +1286,7 @@ div#content {
 }
 
 .portletItem.odd {
-	margin: 3em 0;
+	margin: 3 0;
 	padding-left: 0;
 }
 
