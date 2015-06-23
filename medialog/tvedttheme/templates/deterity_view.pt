@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="medialog.tvedttheme">
+<body>
+
+  <metal:content-core fill-slot="content-core">
+      <metal:block define-macro="content-core"
+            tal:define="templateId template/getId;">
+          <img src="" alt=""  
+                      tal:condition="context/image|nothing"
+                      tal:define="scales context/@@images;
+                                  scale python:scales.scale('image', 'preview')"
+                      tal:replace="structure python:scale and scale.tag(css_class='LeadImage') or None" />      
+
+
+         <div class="dexterity_fields">
+    		<tal:rtfields tal:repeat="rtfield view/rtfields">
+        		<div tal:condition="context/?rtfield" tal:content="structure context/?rtfield/output" />
+    		</tal:rtfields>
+    		
+  		</div>
+      </metal:block>
+  </metal:content-core>
+
+</body>
+</html>
