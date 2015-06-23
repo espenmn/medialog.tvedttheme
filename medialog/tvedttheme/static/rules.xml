@@ -47,7 +47,7 @@
 
         <replace css:content="#viewlet-above-content" css:theme="#above-content" />
         <replace css:content="#portal-columns" css:theme="#portal-columns" />
-        <drop css:content="#viewlet-above-content" />   
+        <drop css:theme="#viewlet-above-content" />   
                 
         <!--content, for Plone 5-->
         <!--replace css:content="#portal-column-content" css:theme="#portal-columns" /-->
