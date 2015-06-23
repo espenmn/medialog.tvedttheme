@@ -288,6 +288,7 @@ padding: 2vh 3vw;
 #portal-columns {
 	margin: -1px auto 0;
 	width: 100%;
+	max-width: 1000px;
 }
 
 .documentEditable,
@@ -1271,7 +1272,6 @@ ul.small a {
 }
 
 div#content {
-	max-width: 940px;
 	padding: 40px 30px;
 	margin: auto;
  
@@ -1371,6 +1371,7 @@ img.button:hover {
 /* Slider */
 
 
+#above-content  ul#slider,
 #viewlet-above-content  ul#slider{
 	margin:  0 auto;
 	overflow: hidden;
