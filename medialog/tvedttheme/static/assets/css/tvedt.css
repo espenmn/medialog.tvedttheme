@@ -166,7 +166,7 @@ h2.tileHeadline a.summary.url {
    color: #b62d2d;
 }
 
-label.horizontal ,
+label.horizontal,
 #formfield-form-widgets-IIconPickerBehavior-iconfield,
 fieldset#folder-listing,
 #formfield-form-widgets-ILeadImage-image_caption,
@@ -518,14 +518,7 @@ ol,ul,dl {
 
 
 
-#content-core ul ul,#content-core ol ul,#content-core dl ul,#content-core ul ol,#content-core ol ol,#content-core dl ol {
-	margin: 0;
-}
-
-#content-core nav ul li,#content-core nav ol li,#content-core ol li,#content-core ul li,#content-core dl li,#content-core nav ul dt,#content-core nav ol dt,#content-core ol dt,#content-core ul dt,#content-core dl dt,#content-core nav ul dd,#content-core nav ol dd,#content-core ol dd,#content-core ul dd,#content-core dl dd {
-	line-height: 1.8em;
-}
-
+ 
 #content-core dt {
 	font-weight: bold;
 }
@@ -1279,14 +1272,19 @@ ul.small a {
 div#content {
 	padding: 40px 30px;
 	margin: auto;
-	float:  left;;
-	width: 50%
  
 }
+#portal-column-one {
+	float:  left;
+}
+
+.portaltype-formfolder #portal-column-content {
+	max-width: 500px;
+	float: left;
+} 
 
 #portal-column-two {
 	float:  right;
-
 }
 
 .portletItem.odd {
@@ -1296,6 +1294,7 @@ div#content {
 
 td#portal-column-content {
 	border: 0 none;
+	
 }
 
 #content-core {
