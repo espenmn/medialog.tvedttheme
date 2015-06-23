@@ -285,11 +285,13 @@ padding: 2vh 3vw;
 	background:  #1c5375;
 }
 
+div#inner-content,
 #portal-columns {
 	margin: -1px auto 0;
 	width: 100%;
 	max-width: 1000px;
 }
+
 
 .documentEditable,
 .documentEditable #content  {
@@ -1274,6 +1276,13 @@ ul.small a {
 div#content {
 	padding: 40px 30px;
 	margin: auto;
+	float:  left;;
+ 
+}
+
+#portal-column-two {
+	float:  right;
+	width: 124px,
  
 }
 
