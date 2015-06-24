@@ -20,6 +20,15 @@
 
   <plone:static type="theme" directory="static" />
  
+
+  <browser:page
+      for="*"
+      name="dexterity_view"
+      class=".dexterity_view.DexterityView"
+      template="templates/dexterity_view.pt"
+      permission="zope.Public"
+      />
+      
   
   <browser:page
     name="fullpage"
@@ -28,7 +37,6 @@
     template="templates/fullpage.pt"
     />
  
-
  
    <!-- MENU ITEMS -->
 

@@ -10,29 +10,19 @@ from plone.dexterity.interfaces import IDexterityContent
     
 class IProductsView(Interface):
     """
-   view interface
+    view interface
     """
 
         
-    def test():
-        """ test method"""
- 
+    def  rtfields():
+        """ Returns richtextfields"""
 
  
 
-class ProductsView(BrowserView):
+class DexterityView(BrowserView):
     """
-   browser view
+    Customizable browser view
     """
-
-    def test(self):
-        """
-        test method
-        """
-        
-        dummy = _(u'a dummy string')
-        return {'dummy': dummy}
-
 
     @property
     def rtfields(self):
