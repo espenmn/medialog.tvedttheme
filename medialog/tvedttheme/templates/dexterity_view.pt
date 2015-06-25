@@ -4,27 +4,33 @@
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
       metal:use-macro="context/main_template/macros/master"
-      i18n:domain="medialog.tvedttheme">
+      i18n:domain="plone.app.dexterity">
 <body>
 
-  <metal:content-core fill-slot="content-core">
-      <metal:block define-macro="content-core"
-            tal:define="templateId template/getId;">
-          <img src="" alt=""  
-                      tal:condition="context/image|nothing"
-                      tal:define="scales context/@@images;
-                                  scale python:scales.scale('image', 'preview')"
-                      tal:replace="structure python:scale and scale.tag(css_class='LeadImage') or None" />      
+<metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core" 
+    tal:define="block_fields view/block_fields;
+    			render_fields view/render_fields">
 
+    <tal:block repeat="widget view/widgets/values">
+    	<tal:widget tal:replace="structure widget/@@d_widget"
+            		tal:condition="python:widget.label not in block_fields and not render_fields" />
+        <tal:widget tal:replace="structure widget/@@d_widget"
+            		tal:condition="python:widget.label in render_fields" />
+    </tal:block>
 
-         <div class="dexterity_fields">
-    		<tal:rtfields tal:repeat="rtfield view/rtfields">
-        		<div tal:condition="context/?rtfield" tal:content="structure context/?rtfield/output" />
-    		</tal:rtfields>
-    		
-  		</div>
-      </metal:block>
+    <fieldset tal:repeat="group view/groups"
+              tal:attributes="id python:''.join((group.prefix, 'groups.', group.__name__)).replace('.', '-')"> 
+        <tal:block tal:repeat="widget group/widgets/values">
+            <tal:widget tal:replace="structure widget/@@d_widget"
+            	tal:condition="python:widget.label not in block_fields and not render_fields" />
+            <tal:widget tal:replace="structure widget/@@d_widget"
+            		tal:condition="python:widget.label in render_fields" />
+        </tal:block>
+    </fieldset>
+
   </metal:content-core>
+</metal:main>
 
 </body>
 </html>

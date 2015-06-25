@@ -5,8 +5,10 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
     i18n_domain="medialog.tvedttheme">
     
+ 
   <five:registerPackage package="." initialize=".initialize" />
     <include package="plone.app.contentmenu" />
     
@@ -36,6 +38,15 @@
     for="zope.location.interfaces.IContained"
     template="templates/fullpage.pt"
     />
+    
+    <browser:page
+      name="d_widget"
+      for="z3c.form.interfaces.IWidget"
+      layer="z3c.form.interfaces.IFormLayer"
+      class="plone.app.z3cform.templates.RenderWidget"
+      template="templates/d_widget.pt"
+      permission="zope.Public"
+      />
  
  
    <!-- MENU ITEMS -->
