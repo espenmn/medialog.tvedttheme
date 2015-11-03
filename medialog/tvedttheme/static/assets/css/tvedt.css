@@ -125,8 +125,6 @@ h1.site_title {
 	display: block;
 	line-height: 1.2em;
 	 color: #0b5f9b;
-	font-size: 140% !important;
-
 }
 
 #portal-logo a:hover{
@@ -1793,7 +1791,7 @@ div#portal-column-content {
   }
   
    h1.site_title {
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 1.1em;
  	color:  black;;
    }
