@@ -1,5 +1,7 @@
 /* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
 
+/* @override http://tvedt.medialog.no/++theme++medialog.tvedttheme/++theme++medialog.tvedttheme/assets/css/tvedt.css */
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
 
 
@@ -845,6 +847,7 @@ div.service-container {
 	max-width: 1000px ;
 	width: 100%;
 	margin: auto;
+
 }
  
 #services .lead,
@@ -857,9 +860,11 @@ div.service-container {
   padding: 15px 20px;
   background: #fff;
   border-radius: 4px;
-  margin: 0 2em 40px 0;
+  margin: 0 0 40px 9%;
   min-height: 7em;
   display: block;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 .services-wrap h3 {
@@ -1775,7 +1780,6 @@ div#portal-column-content {
  
  .col3{
 	  width: 90%;
-	  margin-left: 10%;
 	
    }
 
@@ -1788,6 +1792,8 @@ div#portal-column-content {
    
   div.feature-text {
 	font-size: 90%;
+	float: left;
+	width: 67%;
   }
   
    h1.site_title {
@@ -1802,6 +1808,10 @@ div#portal-column-content {
     line-height: 200%;
     width: 70px;
 }
+#slider {
+	display: none;
+}
+
 }
 
 /* @end */
